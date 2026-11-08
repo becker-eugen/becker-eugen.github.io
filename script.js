@@ -1,3 +1,9 @@
+// ——— PayPal Spenden-Link ———
+// Hier deine PayPal.me-Adresse oder den kompletten Donate-Link eintragen:
+// Beispiel: "https://paypal.me/DeinName"
+// oder:     "https://www.paypal.com/donate/?hosted_button_id=XXXXXXXX"
+const PAYPAL_DONATE_URL = "https://paypal.me/eugen107";
+
 const books = [
   // KI Praxis
   {
@@ -335,6 +341,15 @@ const resetBtn = document.getElementById("resetFilters");
 bookCountEl.textContent = books.length;
 initTheme();
 renderBooks();
+setupDonateLinks();
+
+function setupDonateLinks() {
+  const url = PAYPAL_DONATE_URL;
+  ["donateBtnTop", "donateBtnHero", "donateBtnFooter"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = url;
+  });
+}
 
 // ——— Events ———
 catPills.forEach(btn => {
