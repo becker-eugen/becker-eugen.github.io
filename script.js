@@ -313,6 +313,68 @@ const books = [
     desc: "Sicherheitsanalyse, Forensik und Incident Response unter Windows.",
     file: "books/Windows_Security_Grundlagen/Windows_Security_Band3_Analyse.pdf",
     cover: "covers/windows-band3.jpg"
+  },
+
+  // Netzwerk verstehen
+  {
+    id: "nw-1",
+    title: "Grundlagen der Netzwerktechnik",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 1",
+    desc: "Ein verständlicher Einstieg in die Welt der Computernetzwerke.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band1.pdf",
+    cover: "covers/netzwerk-band1.jpg"
+  },
+  {
+    id: "nw-2",
+    title: "IP – Internet Protocol",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 2",
+    desc: "IPv4, IPv6, Adressierung, Subnetting und Routing verständlich erklärt.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band2.pdf",
+    cover: "covers/netzwerk-band2.jpg"
+  },
+  {
+    id: "nw-3",
+    title: "TCP und UDP",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 3",
+    desc: "Verbindungen, Datenübertragung, Ports und Netzwerkkommunikation verständlich erklärt.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band3.pdf",
+    cover: "covers/netzwerk-band3.jpg"
+  },
+  {
+    id: "nw-4",
+    title: "Netzwerkprotokolle in der Praxis",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 4",
+    desc: "DNS, DHCP, HTTP, HTTPS, SSH und weitere wichtige Netzwerkdienste verstehen.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band4.pdf",
+    cover: "covers/netzwerk-band4.jpg"
+  },
+  {
+    id: "nw-5",
+    title: "Routing, Switching und Netzwerkarchitektur",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 5",
+    desc: "Unternehmensnetzwerke planen, verstehen, aufbauen und verwalten.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band5.pdf",
+    cover: "covers/netzwerk-band5.jpg"
+  },
+  {
+    id: "nw-6",
+    title: "Netzwerkanalyse und Troubleshooting",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 6",
+    desc: "Netzwerkverkehr analysieren, Fehler erkennen und Probleme systematisch lösen.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band6.pdf",
+    cover: "covers/netzwerk-band6.jpg"
   }
 ];
 
@@ -423,7 +485,8 @@ function renderBooks() {
     "ki-verstehen": "KI Verstehen",
     "ethical-hacking": "Ethical Hacking",
     "linux-security": "Linux Security",
-    "windows-security": "Windows Security"
+    "windows-security": "Windows Security",
+    netzwerk: "Netzwerk verstehen"
   };
   sectionTitle.textContent = titles[currentFilter] || "Titel";
   resultCount.textContent = `${filtered.length} ${filtered.length === 1 ? "Buch" : "Bücher"}`;
