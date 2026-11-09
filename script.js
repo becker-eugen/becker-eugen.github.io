@@ -375,6 +375,36 @@ const books = [
     desc: "Netzwerkverkehr analysieren, Fehler erkennen und Probleme systematisch lösen.",
     file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band6.pdf",
     cover: "covers/netzwerk-band6.jpg"
+  },
+  {
+    id: "nw-7",
+    title: "WLAN verstehen",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 7",
+    desc: "Funktechnik, Standards, Sicherheit und Planung von WLAN-Netzen.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band7.pdf",
+    cover: "covers/netzwerk-band7.jpg"
+  },
+  {
+    id: "nw-8",
+    title: "Netzwerksicherheit",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 8",
+    desc: "Firewalls, VLANs, VPN und Zero Trust.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band8.pdf",
+    cover: "covers/netzwerk-band8.jpg"
+  },
+  {
+    id: "nw-9",
+    title: "Netzwerke im Homelab",
+    category: "netzwerk",
+    categoryLabel: "Netzwerk verstehen",
+    band: "Band 9",
+    desc: "Das eigene Netzwerk planen, aufbauen und betreiben.",
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band9.pdf",
+    cover: "covers/netzwerk-band9.jpg"
   }
 ];
 
