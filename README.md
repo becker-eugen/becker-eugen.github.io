@@ -60,3 +60,6 @@ python3 -m http.server 8000
 ```
 
 Danach `http://localhost:8000` im Browser öffnen.
+
+
+Neue Reihe: **Server & Cloud** – gestartet mit Band 1 „Docker und Container“.

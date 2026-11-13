@@ -13,7 +13,8 @@ const SERIES = [
   { id: "ethical-hacking",  label: "Ethical Hacking",  text: "Werkzeuge, Methodik und die Sicht des Blue Teams" },
   { id: "netzwerk",         label: "Netzwerk verstehen", text: "Von den Grundlagen bis zum eigenen Homelab" },
   { id: "linux-security",   label: "Linux Security",   text: "Grundlagen, Hardening und Analyse unter Debian" },
-  { id: "windows-security", label: "Windows Security", text: "Grundlagen, Hardening und Analyse für Windows" }
+  { id: "windows-security", label: "Windows Security", text: "Grundlagen, Hardening und Analyse für Windows" },
+  { id: "server-cloud",    label: "Server & Cloud",    text: "Docker, Kubernetes, Webserver und Cloud-Infrastrukturen" }
 ];
 
 // pages = Seitenzahl, kb = Dateigröße, isNew = Kennzeichnung "Neu"
@@ -121,35 +122,42 @@ const books = [
   { id: "eh-14", title: "Digitale Forensik", category: "ethical-hacking", band: "Band 14", pages: 108, kb: 230, isNew: true,
     desc: "Digitale Spuren sichern und auswerten, Beweise nachvollziehbar dokumentieren.",
     file: "books/Ethical_Hacking/14_Digitale_Forensik.pdf", cover: "covers/eh-14_Digitale_Forensik.jpg" },
+  { id: "eh-15", title: "Active Directory Security", category: "ethical-hacking", band: "Band 15", pages: 149, kb: 310, isNew: true,
+    desc: "Angriffe auf Windows-Domänen verstehen, Schwachstellen erkennen und Active Directory wirksam absichern.",
+    file: "books/Ethical_Hacking/15_Active_Directory_Security.pdf", cover: "covers/eh-15_Active_Directory_Security.jpg" },
+  { id: "eh-16", title: "Social Engineering & Phishing-Abwehr", category: "ethical-hacking", band: "Band 16", pages: 64, kb: 127, isNew: true,
+    desc: "Manipulation und Phishing erkennen, E-Mail-Absender prüfen und Angriffe durch technische und organisatorische Maßnahmen abwehren.",
+    file: "books/Ethical_Hacking/16_Social_Engineering_und_Phishing_Abwehr.pdf", cover: "covers/eh-16_Social_Engineering_Phishing_Abwehr.jpg" },
+
 
   // Netzwerk verstehen
   { id: "nv-1", title: "Grundlagen der Netzwerktechnik", category: "netzwerk", band: "Band 1", pages: 77, kb: 237,
     desc: "Ein verständlicher Einstieg in Computernetzwerke, von Switch und Router bis zu OSI und TCP/IP.",
-    file: "books/Netzwerk_verstehen/Band_1/Netzwerk_verstehen_Band1.pdf", cover: "covers/nv-band1.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band1.pdf", cover: "covers/nv-band1.jpg" },
   { id: "nv-2", title: "IP: Internet Protocol", category: "netzwerk", band: "Band 2", pages: 77, kb: 284,
     desc: "IPv4, IPv6, Adressierung, Subnetting und Routing verständlich erklärt.",
-    file: "books/Netzwerk_verstehen/Band_2/Netzwerk_verstehen_Band2.pdf", cover: "covers/nv-band2.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band2.pdf", cover: "covers/nv-band2.jpg" },
   { id: "nv-3", title: "TCP und UDP", category: "netzwerk", band: "Band 3", pages: 101, kb: 368,
     desc: "Verbindungen, Ports und Datenübertragung auf der Transportschicht.",
-    file: "books/Netzwerk_verstehen/Band_3/Netzwerk_verstehen_Band3.pdf", cover: "covers/nv-band3.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band3.pdf", cover: "covers/nv-band3.jpg" },
   { id: "nv-4", title: "Netzwerkprotokolle in der Praxis", category: "netzwerk", band: "Band 4", pages: 129, kb: 473,
     desc: "DNS, DHCP, HTTP, HTTPS, SSH und weitere Dienste, die jedes Netz braucht.",
-    file: "books/Netzwerk_verstehen/Band_4/Netzwerk_verstehen_Band4.pdf", cover: "covers/nv-band4.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band4.pdf", cover: "covers/nv-band4.jpg" },
   { id: "nv-5", title: "Routing, Switching und Netzwerkarchitektur", category: "netzwerk", band: "Band 5", pages: 205, kb: 732,
     desc: "Unternehmensnetzwerke planen, aufbauen und verwalten.",
-    file: "books/Netzwerk_verstehen/Band_5/Netzwerk_verstehen_Band_5.pdf", cover: "covers/nv-band5.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band5.pdf", cover: "covers/nv-band5.jpg" },
   { id: "nv-6", title: "Netzwerkanalyse und Troubleshooting", category: "netzwerk", band: "Band 6", pages: 233, kb: 764,
     desc: "Netzwerkverkehr analysieren und Fehler systematisch finden.",
-    file: "books/Netzwerk_verstehen/Band_6/Netzwerk_verstehen_Band6.pdf", cover: "covers/nv-band6.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band6.pdf", cover: "covers/nv-band6.jpg" },
   { id: "nv-7", title: "WLAN verstehen", category: "netzwerk", band: "Band 7", pages: 95, kb: 378,
     desc: "Funktechnik, Standards, Sicherheit und die Planung von Funknetzen.",
-    file: "books/Netzwerk_verstehen/Band_7/Netzwerk_verstehen_Band_7.pdf", cover: "covers/nv-band7.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band7.pdf", cover: "covers/nv-band7.jpg" },
   { id: "nv-8", title: "Netzwerksicherheit", category: "netzwerk", band: "Band 8", pages: 141, kb: 489,
     desc: "Firewalls, VLANs, VPN und Zero Trust.",
-    file: "books/Netzwerk_verstehen/Band_8/Netzwerk_verstehen_Band8.pdf", cover: "covers/nv-band8.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band8.pdf", cover: "covers/nv-band8.jpg" },
   { id: "nv-9", title: "Netzwerke im Homelab", category: "netzwerk", band: "Band 9", pages: 159, kb: 591,
     desc: "Das eigene Netzwerk zu Hause planen, aufbauen und betreiben.",
-    file: "books/Netzwerk_verstehen/Band_9/Netzwerk_verstehen_Band9.pdf", cover: "covers/nv-band9.jpg" },
+    file: "books/Netzwerk_verstehen/Netzwerk_verstehen_Band9.pdf", cover: "covers/nv-band9.jpg" },
 
   // Linux Security
   { id: "ls-1", title: "Linux Security: Grundlagen", category: "linux-security", band: "Band 1", pages: 51, kb: 339,
@@ -171,7 +179,12 @@ const books = [
     file: "books/Windows_Security_Grundlagen/Windows_Security_Band2_Hardening.pdf", cover: "covers/windows-band2.jpg" },
   { id: "ws-3", title: "Windows Security: Analyse", category: "windows-security", band: "Band 3", pages: 75, kb: 435,
     desc: "Ereignisprotokolle auswerten und Angriffe unter Windows nachvollziehen.",
-    file: "books/Windows_Security_Grundlagen/Windows_Security_Band3_Analyse.pdf", cover: "covers/windows-band3.jpg" }
+    file: "books/Windows_Security_Grundlagen/Windows_Security_Band3_Analyse.pdf", cover: "covers/windows-band3.jpg" },
+
+  // Server & Cloud
+  { id: "sc-1", title: "Docker und Container", category: "server-cloud", band: "Band 1", pages: 568, kb: 2094, isNew: true,
+    desc: "Von den Grundlagen der Containertechnologie über Docker, Images, Netzwerke und Docker Compose bis zu Sicherheit, produktivem Betrieb und Docker unter Windows.",
+    file: "books/Server_Cloud/Server_Cloud_Band_01.pdf", cover: "covers/server-cloud-band1.jpg" }
 ];
 
 /* ---------- Hilfsfunktionen ---------- */
@@ -251,7 +264,7 @@ function runTerminal() {
 
 /* ---------- 3D-Karussell ---------- */
 function buildCarousel() {
-  const picks = ["ki-p10", "nv-6", "eh-13", "ls-2", "ki-v2", "nv-9", "ws-2", "eh-3", "ki-p9", "nv-1", "eh-14", "ls-3"];
+  const picks = ["sc-1", "ki-p10", "nv-6", "eh-13", "ls-2", "ki-v2", "nv-9", "ws-2", "eh-3", "ki-p9", "nv-1", "eh-14", "ls-3"];
   const items = picks.map(id => books.find(b => b.id === id)).filter(Boolean);
   const step = 360 / items.length;
   const ring = document.createElement("div");
