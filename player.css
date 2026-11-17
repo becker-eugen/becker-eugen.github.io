@@ -1,0 +1,53 @@
+/* ---------- Musikplayer (minimal) ---------- */
+.mp {
+  position: fixed; right: 1.2rem; bottom: 1.2rem; z-index: 250;
+  display: flex; align-items: center; gap: .35rem;
+  padding: .35rem .5rem .35rem .4rem;
+  border-radius: 999px; border: 1px solid var(--line);
+  background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .55);
+  font-family: var(--mono); font-size: .78rem; color: var(--text-2);
+  overflow: hidden;
+}
+.mp-btn {
+  width: 34px; height: 34px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--text-2);
+  transition: color .2s, background-color .2s, transform .3s var(--ease-spring);
+}
+.mp-btn:hover { color: var(--accent); background: var(--panel-2); }
+.mp-btn:active { transform: scale(.9); }
+.mp-btn svg { width: 16px; height: 16px; }
+.mp-play { background: var(--accent); color: var(--accent-ink); }
+.mp-play:hover { background: var(--accent); color: var(--accent-ink); transform: scale(1.06); }
+.mp-play svg { fill: currentColor; stroke: none; }
+.mp-play .i-pause { display: none; }
+.mp.playing .mp-play .i-play { display: none; }
+.mp.playing .mp-play .i-pause { display: block; }
+.mp-mute .i-off { display: none; }
+.mp.muted .mp-mute .i-on { display: none; }
+.mp.muted .mp-mute .i-off { display: block; }
+
+.mp-info { display: flex; align-items: center; gap: .45rem; padding: 0 .3rem; min-width: 4.6rem; white-space: nowrap; }
+.mp-eq { display: inline-flex; align-items: flex-end; gap: 2px; height: 12px; }
+.mp-eq i { width: 2px; height: 3px; background: var(--accent); border-radius: 1px; }
+.mp.playing .mp-eq i { animation: mpEq .9s ease-in-out infinite; }
+.mp.playing .mp-eq i:nth-child(2) { animation-delay: -.3s; }
+.mp.playing .mp-eq i:nth-child(3) { animation-delay: -.6s; }
+@keyframes mpEq { 0%, 100% { height: 3px; } 50% { height: 12px; } }
+
+.mp-bar {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 3px; cursor: pointer;
+  background: transparent;
+}
+.mp-bar span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .25s linear; }
+
+@media (max-width: 560px) {
+  .mp { right: .75rem; bottom: .75rem; }
+  .mp-info { min-width: 0; }
+  .mp-time { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mp.playing .mp-eq i { animation: none; height: 8px; }
+}
