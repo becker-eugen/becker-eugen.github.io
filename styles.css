@@ -598,6 +598,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* ---------- Weniger Bewegung ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
-  .carousel-ring { animation: none; }
+  /* Karussell dreht sich trotzdem, langsam und gleichmäßig */
+  .carousel-ring { animation: spin 46s linear infinite !important; }
   .reveal, .book-card.reveal-card { opacity: 1; transform: none; }
 }
