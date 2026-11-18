@@ -191,7 +191,7 @@ const books = [
   { id: "sc-3", title: "Webserver und Reverse Proxy", category: "server-cloud", band: "Band 3", pages: 506, kb: 1960, isNew: true,
     desc: "Von HTTP und nginx bis zu sicheren Webdiensten mit TLS und Let's Encrypt: Apache, virtuelle Hosts, Reverse Proxys, Lastverteilung, Härtung und IIS.",
     file: "books/Server_Cloud/Server_Cloud_Band_03.pdf", cover: "covers/server-cloud-band3.jpg" },
-  { id: "sc-4", title: "Cloud-Grundlagen", category: "server-cloud", band: "Band 4", pages: 309, kb: 1022, isNew: true,
+  { id: "sc-4", title: "Cloud-Grundlagen", category: "server-cloud", band: "Band 4", pages: 312, kb: 1030, isNew: true,
     desc: "Von Cloud Computing und virtuellen Infrastrukturen bis zum professionellen Cloud-Betrieb: Server, Netze, Speicher, Sicherheit, DSGVO, OpenTofu sowie AWS, Azure und Hetzner im Vergleich.",
     file: "books/Server_Cloud/Server_Cloud_Band_04.pdf", cover: "covers/server-cloud-band4.jpg" }
 ];
