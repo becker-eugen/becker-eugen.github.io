@@ -182,7 +182,7 @@ const books = [
     file: "books/Windows_Security_Grundlagen/Windows_Security_Band3_Analyse.pdf", cover: "covers/windows-band3.jpg" },
 
   // Server & Cloud
-  { id: "sc-1", title: "Docker und Container", category: "server-cloud", band: "Band 1", pages: 568, kb: 2094, isNew: true,
+  { id: "sc-1", title: "Docker und Container", category: "server-cloud", band: "Band 1", pages: 568, kb: 1796, isNew: true,
     desc: "Von den Grundlagen der Containertechnologie über Docker, Images, Netzwerke und Docker Compose bis zu Sicherheit, produktivem Betrieb und Docker unter Windows.",
     file: "books/Server_Cloud/Server_Cloud_Band_01.pdf", cover: "covers/server-cloud-band1.jpg" },
   { id: "sc-2", title: "Kubernetes-Grundlagen", category: "server-cloud", band: "Band 2", pages: 690, kb: 2066, isNew: true,
