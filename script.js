@@ -185,7 +185,7 @@ const books = [
   { id: "sc-1", title: "Docker und Container", category: "server-cloud", band: "Band 1", pages: 568, kb: 2094, isNew: true,
     desc: "Von den Grundlagen der Containertechnologie über Docker, Images, Netzwerke und Docker Compose bis zu Sicherheit, produktivem Betrieb und Docker unter Windows.",
     file: "books/Server_Cloud/Server_Cloud_Band_01.pdf", cover: "covers/server-cloud-band1.jpg" },
-  { id: "sc-2", title: "Kubernetes-Grundlagen", category: "server-cloud", band: "Band 2", pages: 690, kb: 2512, isNew: true,
+  { id: "sc-2", title: "Kubernetes-Grundlagen", category: "server-cloud", band: "Band 2", pages: 690, kb: 2066, isNew: true,
     desc: "Von der Container-Orchestrierung bis zum professionellen Clusterbetrieb: Cluster mit kubeadm, Pods, Deployments, Netzwerke, Speicher, Sicherheit, Helm und GitOps.",
     file: "books/Server_Cloud/Server_Cloud_Band_02.pdf", cover: "covers/server-cloud-band2.jpg" },
   { id: "sc-3", title: "Webserver und Reverse Proxy", category: "server-cloud", band: "Band 3", pages: 506, kb: 1960, isNew: true,
