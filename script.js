@@ -184,7 +184,16 @@ const books = [
   // Server & Cloud
   { id: "sc-1", title: "Docker und Container", category: "server-cloud", band: "Band 1", pages: 568, kb: 2094, isNew: true,
     desc: "Von den Grundlagen der Containertechnologie über Docker, Images, Netzwerke und Docker Compose bis zu Sicherheit, produktivem Betrieb und Docker unter Windows.",
-    file: "books/Server_Cloud/Server_Cloud_Band_01.pdf", cover: "covers/server-cloud-band1.jpg" }
+    file: "books/Server_Cloud/Server_Cloud_Band_01.pdf", cover: "covers/server-cloud-band1.jpg" },
+  { id: "sc-2", title: "Kubernetes-Grundlagen", category: "server-cloud", band: "Band 2", pages: 690, kb: 2512, isNew: true,
+    desc: "Von der Container-Orchestrierung bis zum professionellen Clusterbetrieb: Cluster mit kubeadm, Pods, Deployments, Netzwerke, Speicher, Sicherheit, Helm und GitOps.",
+    file: "books/Server_Cloud/Server_Cloud_Band_02.pdf", cover: "covers/server-cloud-band2.jpg" },
+  { id: "sc-3", title: "Webserver und Reverse Proxy", category: "server-cloud", band: "Band 3", pages: 506, kb: 1960, isNew: true,
+    desc: "Von HTTP und nginx bis zu sicheren Webdiensten mit TLS und Let's Encrypt: Apache, virtuelle Hosts, Reverse Proxys, Lastverteilung, Härtung und IIS.",
+    file: "books/Server_Cloud/Server_Cloud_Band_03.pdf", cover: "covers/server-cloud-band3.jpg" },
+  { id: "sc-4", title: "Cloud-Grundlagen", category: "server-cloud", band: "Band 4", pages: 305, kb: 1009, isNew: true,
+    desc: "Von Cloud Computing und virtuellen Infrastrukturen bis zum professionellen Cloud-Betrieb: Server, Netze, Speicher, Sicherheit, DSGVO, OpenTofu sowie AWS, Azure und Hetzner im Vergleich.",
+    file: "books/Server_Cloud/Server_Cloud_Band_04.pdf", cover: "covers/server-cloud-band4.jpg" }
 ];
 
 /* ---------- Hilfsfunktionen ---------- */
