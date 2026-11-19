@@ -14,7 +14,8 @@ const SERIES = [
   { id: "netzwerk",         label: "Netzwerk verstehen", text: "Von den Grundlagen bis zum eigenen Homelab" },
   { id: "linux-security",   label: "Linux Security",   text: "Grundlagen, Hardening und Analyse unter Debian" },
   { id: "windows-security", label: "Windows Security", text: "Grundlagen, Hardening und Analyse für Windows" },
-  { id: "server-cloud",    label: "Server & Cloud",    text: "Docker, Kubernetes, Webserver und Cloud-Infrastrukturen" }
+  { id: "server-cloud",    label: "Server & Cloud",    text: "Docker, Kubernetes, Webserver und Cloud-Infrastrukturen" },
+  { id: "scripting",       label: "Scripting & Automatisierung", text: "Bash, PowerShell, Python und Git für den IT-Betrieb" }
 ];
 
 // pages = Seitenzahl, kb = Dateigröße, isNew = Kennzeichnung "Neu"
@@ -193,7 +194,21 @@ const books = [
     file: "books/Server_Cloud/Server_Cloud_Band_03.pdf", cover: "covers/server-cloud-band3.jpg" },
   { id: "sc-4", title: "Cloud-Grundlagen", category: "server-cloud", band: "Band 4", pages: 312, kb: 1030, isNew: true,
     desc: "Von Cloud Computing und virtuellen Infrastrukturen bis zum professionellen Cloud-Betrieb: Server, Netze, Speicher, Sicherheit, DSGVO, OpenTofu sowie AWS, Azure und Hetzner im Vergleich.",
-    file: "books/Server_Cloud/Server_Cloud_Band_04.pdf", cover: "covers/server-cloud-band4.jpg" }
+    file: "books/Server_Cloud/Server_Cloud_Band_04.pdf", cover: "covers/server-cloud-band4.jpg" },
+
+  // Scripting & Automatisierung
+  { id: "sa-1", title: "Bash für Admins", category: "scripting", band: "Band 1", pages: 486, kb: 1584, isNew: true,
+    desc: "Linux-Administration, Shell-Scripting und professionelle Automatisierung, von der ersten Zeile in der Shell bis zu Skripten für den laufenden Betrieb.",
+    file: "books/Scripting_Automatisierung/Scripting_Automatisierung_Band_01.pdf", cover: "covers/scripting-band1.jpg" },
+  { id: "sa-2", title: "PowerShell für Admins", category: "scripting", band: "Band 2", pages: 494, kb: 1719, isNew: true,
+    desc: "Windows-Administration, Automatisierung und professionelles Systemmanagement mit PowerShell, von den Grundlagen bis zu Skripten für den Betrieb.",
+    file: "books/Scripting_Automatisierung/Scripting_Automatisierung_Band_02.pdf", cover: "covers/scripting-band2.jpg" },
+  { id: "sa-3", title: "Python für IT-Praktiker", category: "scripting", band: "Band 3", pages: 502, kb: 1613, isNew: true,
+    desc: "Programmierung, Automatisierung und IT-Werkzeuge mit Python: Dateien, Prozesse, Netzwerk, Datenbanken, Webdienste, Tests und IT-Sicherheit.",
+    file: "books/Scripting_Automatisierung/Scripting_Automatisierung_Band_03.pdf", cover: "covers/scripting-band3.jpg" },
+  { id: "sa-4", title: "Git und Versionsverwaltung", category: "scripting", band: "Band 4", pages: 428, kb: 1415, isNew: true,
+    desc: "Versionskontrolle, Teamarbeit und professionelle Entwicklungsworkflows: Commits, Branches, Merge, Remotes, Hooks, Pipelines und Releases, mit drei Praxisprojekten.",
+    file: "books/Scripting_Automatisierung/Scripting_Automatisierung_Band_04.pdf", cover: "covers/scripting-band4.jpg" }
 ];
 
 /* ---------- Hilfsfunktionen ---------- */

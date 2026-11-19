@@ -12,6 +12,8 @@ Website für die Fachbücher von Eugen Becker, gehostet auf GitHub Pages.
 - Netzwerk verstehen
 - Linux Security
 - Windows Security
+- Server & Cloud
+- Scripting & Automatisierung
 
 Die genaue Anzahl der Bücher pro Reihe steht live auf der Seite und berechnet sich automatisch aus `script.js`.
 
@@ -63,3 +65,5 @@ Danach `http://localhost:8000` im Browser öffnen.
 
 
 Neue Reihe: **Server & Cloud** – gestartet mit Band 1 „Docker und Container“.
+
+Reihe **Scripting & Automatisierung** mit vier Bänden: Bash für Admins, PowerShell für Admins, Python für IT-Praktiker, Git und Versionsverwaltung.
