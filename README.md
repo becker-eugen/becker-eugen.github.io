@@ -6,6 +6,7 @@ Website für die Fachbücher von Eugen Becker, gehostet auf GitHub Pages.
 
 ## Reihen
 
+- IT-BERUFE
 - KI Praxis
 - KI Verstehen
 - Ethical Hacking
@@ -67,3 +68,5 @@ Danach `http://localhost:8000` im Browser öffnen.
 Neue Reihe: **Server & Cloud** – gestartet mit Band 1 „Docker und Container“.
 
 Reihe **Scripting & Automatisierung** mit vier Bänden: Bash für Admins, PowerShell für Admins, Python für IT-Praktiker, Git und Versionsverwaltung.
+
+Reihe **IT-BERUFE** mit sechs Büchern für die Ausbildung zum Fachinformatiker (AP1-Prüfungstraining, IT-Hardware, Kundenkommunikation, Programmierlogik, Projektmanagement, Kaufmännische Grundlagen). Sie steht an erster Stelle und ist nicht als neu markiert.

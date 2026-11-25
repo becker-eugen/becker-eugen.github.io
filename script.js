@@ -8,6 +8,7 @@
 const PAYPAL_DONATE_URL = "https://paypal.me/eugen107";
 
 const SERIES = [
+  { id: "it-berufe",        label: "IT-BERUFE",        text: "Lehr- und Prüfungsbücher für die Ausbildung zum Fachinformatiker" },
   { id: "ki-praxis",        label: "KI Praxis",        text: "Vom Arbeitsalltag bis zu eigenen KI-Agenten" },
   { id: "ki-verstehen",     label: "KI Verstehen",     text: "Prompting, Vibe Coding und eine Forschungsarbeit" },
   { id: "ethical-hacking",  label: "Ethical Hacking",  text: "Werkzeuge, Methodik und die Sicht des Blue Teams" },
@@ -20,6 +21,26 @@ const SERIES = [
 
 // pages = Seitenzahl, kb = Dateigröße, isNew = Kennzeichnung "Neu"
 const books = [
+  // IT-BERUFE
+  { id: "itb-1", title: "AP1-Prüfungstraining", category: "it-berufe", band: "Prüfungstraining", pages: 371, kb: 842,
+    desc: "Einrichten eines IT-gestützten Arbeitsplatzes: Praxiswissen, Handlungssituationen, 120 Übungsaufgaben und acht Übungsprüfungen mit Musterlösungen für Fachinformatiker für Systemintegration.",
+    file: "books/IT_Berufe/AP1_Pruefungstraining_IT_Arbeitsplatz.pdf", cover: "covers/it-berufe-ap1.jpg" },
+  { id: "itb-2", title: "IT-Hardware und Arbeitsplatzsysteme", category: "it-berufe", band: "Fachbuch", pages: 318, kb: 765,
+    desc: "Computertechnik verstehen, IT-Arbeitsplätze planen, konfigurieren und professionell einrichten.",
+    file: "books/IT_Berufe/IT_Hardware_Arbeitsplatzsysteme.pdf", cover: "covers/it-berufe-hardware.jpg" },
+  { id: "itb-3", title: "Kundenkommunikation, Service und Arbeitsorganisation", category: "it-berufe", band: "Lehrbuch", pages: 265, kb: 637,
+    desc: "Professioneller IT-Support, Kundenbetreuung, Serviceprozesse und effizientes Arbeiten in der IT.",
+    file: "books/IT_Berufe/Kundenkommunikation_Service_Arbeitsorganisation.pdf", cover: "covers/it-berufe-service.jpg" },
+  { id: "itb-4", title: "Programmierlogik, UML und Datenbanken", category: "it-berufe", band: "Lehrbuch", pages: 287, kb: 681,
+    desc: "Logisches Denken, Algorithmen verstehen und Daten strukturiert verwalten.",
+    file: "books/IT_Berufe/Programmierlogik_UML_Datenbanken.pdf", cover: "covers/it-berufe-logik.jpg" },
+  { id: "itb-5", title: "Projektmanagement und Qualitätssicherung", category: "it-berufe", band: "Lehrbuch", pages: 300, kb: 751,
+    desc: "IT-Projekte planen, steuern, dokumentieren und erfolgreich abschließen.",
+    file: "books/IT_Berufe/Projektmanagement_Qualitaetssicherung.pdf", cover: "covers/it-berufe-projekt.jpg" },
+  { id: "itb-6", title: "Kaufmännische Grundlagen und IT-Rechnen", category: "it-berufe", band: "Lehrbuch", pages: 245, kb: 623,
+    desc: "Wirtschaftlich denken, Angebote kalkulieren, Kosten berechnen und IT-Entscheidungen fundiert treffen.",
+    file: "books/IT_Berufe/Kaufmaennische_Grundlagen_IT_Rechnen.pdf", cover: "covers/it-berufe-kaufmann.jpg" },
+
   // KI Praxis
   { id: "ki-p1", title: "KI im produktiven Alltag", category: "ki-praxis", band: "Band 1", pages: 50, kb: 87,
     desc: "Wie du KI praktisch und effizient in deinen Arbeitsalltag einbaust.",
